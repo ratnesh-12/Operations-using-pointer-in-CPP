@@ -1,4 +1,4 @@
-# Experiment 10
+# Operations using pointer in CPP
 # C++ Pointers Exploration
 
 ## Objective
