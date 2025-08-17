@@ -31,10 +31,10 @@ type *pointerName;
 
 ### Applications:
 
-Modifying variable values through their memory addresses
-Efficiently iterating over arrays
-Supporting dynamic memory allocation with new and delete
-Enabling functions to return multiple values
+- Modifying variable values through their memory addresses
+- Efficiently iterating over arrays
+- Supporting dynamic memory allocation with new and delete
+- Enabling functions to return multiple values
 
 # Sample Code:
 #include <iostream>
@@ -66,12 +66,15 @@ Updated value: 25
 Pointers support operations like:
 
 Increment (ptr++): Moves to the next memory location based on data type size
+
 Decrement (ptr--): Moves to the previous memory location
+
 Arithmetic with integers to navigate memory
 
 ### 3. Null and Dangling Pointers
 
 Null Pointer: Set to nullptr to avoid unintended memory access
+
 Dangling Pointer: Points to invalid or freed memory, which should be avoided
 
 ### Experiments
@@ -80,8 +83,11 @@ This experiment showcases how pointer increments vary with data type sizes (int,
 Steps:
 
 Declare variables: int a = 10, float b = 5.5, char ch = 'x', double d = 2.718
+
 Assign pointers to their addresses
+
 Print addresses before and after incrementing each pointer
+
 Observe address changes based on data type sizes (e.g., int: +4 bytes, double: +8 bytes)
 
 ### B. Pointer Arithmetic in Arrays
@@ -89,7 +95,9 @@ This program performs arithmetic operations (sum and difference) on array elemen
 Steps:
 
 Initialize array: int arr[] = {10, 20, 30, 40, 50}
+
 Set pointers: p1 to arr[1] (20), p2 to arr[3] (40)
+
 Compute and display: *p2 - *p1 and *p2 + *p1
 
 ### C. Array Traversal with Pointers
@@ -97,8 +105,11 @@ This experiment traverses an array forward and backward using a pointer.
 Steps:
 
 Initialize array: int arr[] = {10, 20, 30, 40, 50}
+
 Set pointer to array's base address
+
 Traverse forward: Print *(ptr + i) for i from 0 to 4
+
 Traverse backward: Print *(ptr + i) for i from 4 to 0
 
 ### D. String Traversal Using Pointers
@@ -106,8 +117,11 @@ This program prints a string character by character using a pointer.
 Steps:
 
 Declare a character array str and a pointer ptr
+
 Prompt user for a string and store in str
+
 Set ptr to str's base address
+
 Loop until ptr reaches \0, printing each character
 
 ### Conclusion
